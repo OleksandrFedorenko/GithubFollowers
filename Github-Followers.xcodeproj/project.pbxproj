@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		40C5DE892AC835C600683A25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C5DE882AC835C600683A25 /* AppDelegate.swift */; };
 		40C5DE8B2AC835C600683A25 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C5DE8A2AC835C600683A25 /* SceneDelegate.swift */; };
-		40C5DE8D2AC835C600683A25 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C5DE8C2AC835C600683A25 /* ViewController.swift */; };
 		40C5DE902AC835C600683A25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40C5DE8E2AC835C600683A25 /* Main.storyboard */; };
 		40C5DE922AC835C700683A25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40C5DE912AC835C700683A25 /* Assets.xcassets */; };
 		40C5DE952AC835C700683A25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40C5DE932AC835C700683A25 /* LaunchScreen.storyboard */; };
+		40C5DE9D2AC84A0900683A25 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C5DE9C2AC84A0900683A25 /* SearchViewController.swift */; };
+		40C5DE9F2AC84A2600683A25 /* FavoritesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C5DE9E2AC84A2600683A25 /* FavoritesListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		40C5DE852AC835C600683A25 /* Github-Followers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Github-Followers.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		40C5DE882AC835C600683A25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		40C5DE8A2AC835C600683A25 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		40C5DE8C2AC835C600683A25 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		40C5DE8F2AC835C600683A25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		40C5DE912AC835C700683A25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		40C5DE942AC835C700683A25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		40C5DE962AC835C700683A25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40C5DE9C2AC84A0900683A25 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		40C5DE9E2AC84A2600683A25 /* FavoritesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +60,8 @@
 			children = (
 				40C5DE882AC835C600683A25 /* AppDelegate.swift */,
 				40C5DE8A2AC835C600683A25 /* SceneDelegate.swift */,
-				40C5DE8C2AC835C600683A25 /* ViewController.swift */,
+				40C5DE9C2AC84A0900683A25 /* SearchViewController.swift */,
+				40C5DE9E2AC84A2600683A25 /* FavoritesListViewController.swift */,
 				40C5DE8E2AC835C600683A25 /* Main.storyboard */,
 				40C5DE912AC835C700683A25 /* Assets.xcassets */,
 				40C5DE932AC835C700683A25 /* LaunchScreen.storyboard */,
@@ -138,8 +141,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40C5DE8D2AC835C600683A25 /* ViewController.swift in Sources */,
+				40C5DE9D2AC84A0900683A25 /* SearchViewController.swift in Sources */,
 				40C5DE892AC835C600683A25 /* AppDelegate.swift in Sources */,
+				40C5DE9F2AC84A2600683A25 /* FavoritesListViewController.swift in Sources */,
 				40C5DE8B2AC835C600683A25 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -218,7 +222,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -275,7 +279,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
