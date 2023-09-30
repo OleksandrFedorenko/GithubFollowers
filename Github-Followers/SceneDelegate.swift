@@ -42,6 +42,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         UITabBar.appearance().tintColor = .systemGreen
         tabbar.tabBar.backgroundColor = UIColor(red: 255 / 256, green: 255 / 256, blue: 255 / 256, alpha: 0.5)
        UINavigationBar.appearance().backgroundColor = UIColor(red: 255 / 256, green: 255 / 256, blue: 255 / 256, alpha: 0.5)
+        #warning("some comments")
 //        UINavigationBar.appearance().scrollEdgeAppearance
 //        UINavigationBar.appearance().isTranslucent = false
 //        tabbar.navigationController?.navigationBar.backgroundColor =

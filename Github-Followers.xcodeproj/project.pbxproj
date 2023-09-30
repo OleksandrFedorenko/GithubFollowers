@@ -14,6 +14,8 @@
 		40C5DE952AC835C700683A25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40C5DE932AC835C700683A25 /* LaunchScreen.storyboard */; };
 		40C5DE9D2AC84A0900683A25 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C5DE9C2AC84A0900683A25 /* SearchViewController.swift */; };
 		40C5DE9F2AC84A2600683A25 /* FavoritesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C5DE9E2AC84A2600683A25 /* FavoritesListViewController.swift */; };
+		40C5DEA12AC881AF00683A25 /* AFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C5DEA02AC881AF00683A25 /* AFButton.swift */; };
+		40C5DEA32AC884AF00683A25 /* AFTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C5DEA22AC884AF00683A25 /* AFTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		40C5DE962AC835C700683A25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		40C5DE9C2AC84A0900683A25 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		40C5DE9E2AC84A2600683A25 /* FavoritesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesListViewController.swift; sourceTree = "<group>"; };
+		40C5DEA02AC881AF00683A25 /* AFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFButton.swift; sourceTree = "<group>"; };
+		40C5DEA22AC884AF00683A25 /* AFTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,8 @@
 				40C5DE912AC835C700683A25 /* Assets.xcassets */,
 				40C5DE932AC835C700683A25 /* LaunchScreen.storyboard */,
 				40C5DE962AC835C700683A25 /* Info.plist */,
+				40C5DEA02AC881AF00683A25 /* AFButton.swift */,
+				40C5DEA22AC884AF00683A25 /* AFTextField.swift */,
 			);
 			path = "Github-Followers";
 			sourceTree = "<group>";
@@ -144,6 +150,8 @@
 				40C5DE9D2AC84A0900683A25 /* SearchViewController.swift in Sources */,
 				40C5DE892AC835C600683A25 /* AppDelegate.swift in Sources */,
 				40C5DE9F2AC84A2600683A25 /* FavoritesListViewController.swift in Sources */,
+				40C5DEA12AC881AF00683A25 /* AFButton.swift in Sources */,
+				40C5DEA32AC884AF00683A25 /* AFTextField.swift in Sources */,
 				40C5DE8B2AC835C600683A25 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
