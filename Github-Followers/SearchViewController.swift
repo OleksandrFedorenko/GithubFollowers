@@ -9,21 +9,55 @@ import UIKit
 
 class SearchViewController: UIViewController {
 
+    let logoImageView = UIImageView()
+    let searchUserTextField = AFTextField()
+    let callToActionButton = AFButton(backgroundColor: .systemGreen, title: "Get Followers")
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = .systemBlue
+        //white in light mode, black in dark mode
+        view.backgroundColor = .systemBackground
+        configuteLogoImageView()
+        configureSearchUserTextField()
+        configureCallToActionButton()
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.navigationBar.isHidden = true
     }
-    */
-
+    
+    private func configuteLogoImageView() {
+        view.addSubview(logoImageView)
+        logoImageView.translatesAutoresizingMaskIntoConstraints = false
+        logoImageView.image = UIImage(named: "gh-logo")!
+        
+        NSLayoutConstraint.activate([
+            logoImageView.widthAnchor.constraint(equalToConstant: 200),
+            logoImageView.heightAnchor.constraint(equalToConstant: 200),
+            logoImageView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 80),
+            logoImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor)
+        ])
+    }
+    
+    private func configureSearchUserTextField() {
+        view.addSubview(searchUserTextField)
+        NSLayoutConstraint.activate([
+            searchUserTextField.topAnchor.constraint(equalTo: logoImageView.bottomAnchor, constant: 48),
+            searchUserTextField.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -50),
+            searchUserTextField.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 50),
+            searchUserTextField.heightAnchor.constraint(equalToConstant: 50)
+        ])
+    }
+    
+    private func configureCallToActionButton() {
+        view.addSubview(callToActionButton)
+        NSLayoutConstraint.activate([
+            callToActionButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -50),
+            callToActionButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 50),
+            callToActionButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -50),
+            callToActionButton.heightAnchor.constraint(equalToConstant: 50)
+        ])
+    }
 }

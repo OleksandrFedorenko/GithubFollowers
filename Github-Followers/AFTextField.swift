@@ -9,7 +9,7 @@ import UIKit
 
 class AFTextField: UITextField {
     override init(frame: CGRect) {
-        super .init(frame: frame)
+        super.init(frame: frame)
         configure()
     }
 
